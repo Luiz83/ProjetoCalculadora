@@ -12,3 +12,7 @@ function Somar(numUm, numDois) {
 function Susbtrair(numUm, numDois) {
     return numUm - numDois
 }
+
+function Multiplicar(numUm, numDois) {
+    return numUm * numDois
+}
