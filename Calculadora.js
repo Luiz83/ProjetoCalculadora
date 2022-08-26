@@ -16,3 +16,7 @@ function Susbtrair(numUm, numDois) {
 function Multiplicar(numUm, numDois) {
     return numUm * numDois
 }
+
+function Dividir(numUm, numDois) {
+    return numUm / numDois
+}
