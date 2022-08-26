@@ -5,9 +5,15 @@ var contador = 0
 var continuar = 1
 
 while (continuar == 1) {
-    numA = parseInt(prompt("Insira um valor para A"))
-    numB = parseInt(prompt("Insira um valor para B"))
+    numA = SolicitarNumero()
+    numB = SolicitarNumero()
 
+    RealizarOperacao()
+
+    continuar = prompt("Deseja fazer outra operação? 1 - Sim / 2 - Não")
+}
+
+function RealizarOperacao() {
     var opcao = prompt("Qual operação deseja fazer? 1 - Somar / 2 - Subtrair / 3 - Multiplicar / 4 - Dividir / 5 - Exibir Resultados")
 
     if (opcao == 1) {
@@ -31,8 +37,11 @@ while (continuar == 1) {
     } else {
         continuar = 2
     }
+}
 
-    continuar = prompt("Deseja fazer outra operação? 1 - Sim / 2 - Não")
+function SolicitarNumero() {
+
+    return parseInt(prompt("Insira um valor"))
 }
 
 function ExibirHistorico() {
